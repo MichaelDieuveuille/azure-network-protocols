@@ -25,7 +25,8 @@ In this lab, we explored core network protocols such as ICMP, RDP, DNS, and HTTP
 <h2>Actions and Observations</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Network Protocols Test"/>
+<img width="2559" height="1011" alt="Screenshot 2025-11-06 231337" src="https://github.com/user-attachments/assets/aaa967ec-9b99-4aa6-956f-a0165169e0d5" />
+
 </p>
 <p>
 After blocking ICMP in the NSG, the ping request from the client VM timed out, confirming that ICMP traffic was successfully restricted by the firewall rule.
@@ -33,7 +34,8 @@ After blocking ICMP in the NSG, the ping request from the client VM timed out, c
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="RDP and HTTP Test"/>
+<img width="2559" height="875" alt="Screenshot 2025-11-06 231415" src="https://github.com/user-attachments/assets/5b2eaae7-c27a-46bd-8029-85e68993d427" />
+
 </p>
 <p>
 When HTTP and HTTPS ports were opened, the client VM could access the web server hosted on the Windows Server VM. RDP access was tested and confirmed through port 3389.
@@ -41,7 +43,8 @@ When HTTP and HTTPS ports were opened, the client VM could access the web server
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="DNS Test"/>
+<img width="2559" height="1170" alt="Screenshot 2025-11-06 231510" src="https://github.com/user-attachments/assets/f4225242-3623-4efc-b575-c8a6a458cdb3" />
+
 </p>
 <p>
 Using <code>nslookup</code>, we verified that DNS resolution functioned properly within the network, and name-to-IP translation succeeded for internal and external domains.
