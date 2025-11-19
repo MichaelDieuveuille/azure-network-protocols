@@ -57,27 +57,31 @@ Next, use the ping -t command to continuously ping the Linux machine. Then, go t
 
 After blocking ICMP traffic on the Linux machine’s firewall, check Wireshark to see that the pings no longer receive replies. In PowerShell, you’ll see a message saying "Request Timed Out."
 
-<img width="1917" height="915" alt="NSG 9" src="https://github.com/user-attachments/assets/f6983b44-75c9-4d5a-a06c-1fb271324aee" />
-
-
-Afterward, delete the inbound port rule to allow ICMP traffic again. To stop the continuous pinging, press Ctrl + C in PowerShell.
 
 <img width="856" height="761" alt="NSG 10" src="https://github.com/user-attachments/assets/b5b847cb-1525-41f8-bca5-c16aa202564e" />
 
+Afterward, delete the inbound port rule to allow ICMP traffic again. To stop the continuous pinging, press Ctrl + C in PowerShell.
 
-Next, we will filter SSH traffic using Wireshark. By now, you should have a basic understanding of how to navigate Wireshark. To proceed, open the command prompt on your Windows machine and establish an SSH connection to the Linux machine using the command: ssh labuser2@10.0.0.5. Once this command is executed, Wireshark will display the SSH traffic, allowing you to observe and analyze it in real time.You can type "exit" to end the linux SSH connection when you're done.
 
 <img width="1819" height="785" alt="NSG 11" src="https://github.com/user-attachments/assets/a29a7e78-85e2-443e-8c8f-1deea43f0f3e" />
 
 
-Next, we'll filter DNS traffic in Wireshark. Start by setting Wireshark to display only DNS traffic. To generate DNS activity, use the command nslookup www.yahoo.com, which queries the DNS server for Yahoo's IP address.
+Next, we will filter SSH traffic using Wireshark. By now, you should have a basic understanding of how to navigate Wireshark. To proceed, open the command prompt on your Windows machine and establish an SSH connection to the Linux machine using the command: ssh labuser2@10.0.0.5. Once this command is executed, Wireshark will display the SSH traffic, allowing you to observe and analyze it in real time.You can type "exit" to end the linux SSH connection when you're done.
+
 
 
 <img width="1289" height="388" alt="NSG 12" src="https://github.com/user-attachments/assets/a3287e8f-77ef-458a-a8d4-58430e83e33d" />
 
-Now, we'll use Wireshark to filter DHCP traffic. DHCP, or Dynamic Host Configuration Protocol, assigns IP addresses to devices. To generate DHCP traffic, enter the command ipconfig /renew in PowerShell, which requests a new IP address. Wireshark will capture this DHCP activity for analysis.
+Next, we'll filter DNS traffic in Wireshark. Start by setting Wireshark to display only DNS traffic. To generate DNS activity, use the command nslookup www.yahoo.com, which queries the DNS server for Yahoo's IP address.
+
+
 
 
 <img width="1347" height="487" alt="NSG 14" src="https://github.com/user-attachments/assets/e242bf4e-91be-4ea2-a1f5-39dcc8c2e506" />
+
+Now, we'll use Wireshark to filter DHCP traffic. DHCP, or Dynamic Host Configuration Protocol, assigns IP addresses to devices. To generate DHCP traffic, enter the command ipconfig /renew in PowerShell, which requests a new IP address. Wireshark will capture this DHCP activity for analysis.
+
+
+<img width="1347" height="487" alt="NSG 14" src="https://github.com/user-attachments/assets/4a849614-6742-47ee-9c33-a5fe5c034755" />
 
 Lastly, we'll filter for RDP traffic in Wireshark. Since we're using Remote Desktop Protocol to connect to our virtual machine, RDP traffic will appear continuously, providing ample data for analysis.
