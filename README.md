@@ -17,7 +17,7 @@ In this lab, we explored core network protocols such as ICMP, RDP, DNS, and HTTP
 <h2>High-Level Steps</h2>
 <ol>
   <li>Create two VMs in the same virtual network (Windows 10 client and Server 2022).</li>
-  <li>Configure NSGs to allow or block specific protocols (ICMP, RDP, DNS, HTTP/HTTPS).</li>
+  <li>Configure NSGs to allow or block specific protocols (ICMP, DNS, HTTP/HTTPS).</li>
   <li>Test connectivity between VMs using <code>ping</code>, <code>nslookup</code>, and browser access.</li>
   <li>Observe the effect of enabling/disabling protocol access in NSG rules.</li>
 </ol>
@@ -81,7 +81,3 @@ Next, we'll filter DNS traffic in Wireshark. Start by setting Wireshark to displ
 
 Now, we'll use Wireshark to filter DHCP traffic. DHCP, or Dynamic Host Configuration Protocol, assigns IP addresses to devices. To generate DHCP traffic, enter the command ipconfig /renew in PowerShell, which requests a new IP address. Wireshark will capture this DHCP activity for analysis.
 
-
-<img width="1347" height="487" alt="NSG 14" src="https://github.com/user-attachments/assets/4a849614-6742-47ee-9c33-a5fe5c034755" />
-
-Lastly, we'll filter for RDP traffic in Wireshark. Since we're using Remote Desktop Protocol to connect to our virtual machine, RDP traffic will appear continuously, providing ample data for analysis.
