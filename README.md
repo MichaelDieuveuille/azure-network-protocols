@@ -16,10 +16,17 @@ In this lab, we explored core network protocols such as ICMP, RDP, DNS, and HTTP
 
 <h2>High-Level Steps</h2>
 <ol>
-  <li>Create two VMs in the same virtual network (Windows 10 client and Server 2022).</li>
-  <li>Configure NSGs to allow or block specific protocols (ICMP, DNS, HTTP/HTTPS).</li>
-  <li>Test connectivity between VMs using <code>ping</code>, <code>nslookup</code>, and browser access.</li>
-  <li>Observe the effect of enabling/disabling protocol access in NSG rules.</li>
+1.Set up two virtual machines in Azure
+Created a Windows client VM and a Linux server VM within the same virtual network to test communication between systems.
+
+2.Configure Network Security Groups (NSGs)
+Applied rules that allow or block specific network protocols such as ICMP (ping), DNS, SSH, and HTTP/HTTPS.
+
+3.Test and observe network connectivity
+Used tools like ping, SSH, nslookup, and a web browser to test how the VMs communicate under different NSG configurations.
+
+4.Analyze traffic with Wireshark
+Captured and viewed network packets to see how protocol traffic behaves when NSG rules are enabled or disabled.
 </ol>
 
 <h2>Actions and Observations</h2>
