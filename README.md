@@ -77,7 +77,7 @@ Next, we'll filter DNS traffic in Wireshark. Start by setting Wireshark to displ
 
 Now, we'll use Wireshark to filter DHCP traffic. DHCP, or Dynamic Host Configuration Protocol, assigns IP addresses to devices. To generate DHCP traffic, enter the command ipconfig /renew in PowerShell, which requests a new IP address. Wireshark will capture this DHCP activity for analysis.
 
-<img width="1347" height="487" alt="NSG 13" src="https://github.com/user-attachments/assets/f974eb7a-87c9-4ca6-98e9-5f7f1c308b43" />
 
+<img width="1347" height="487" alt="NSG 14" src="https://github.com/user-attachments/assets/e242bf4e-91be-4ea2-a1f5-39dcc8c2e506" />
 
 Lastly, we'll filter for RDP traffic in Wireshark. Since we're using Remote Desktop Protocol to connect to our virtual machine, RDP traffic will appear continuously, providing ample data for analysis.
